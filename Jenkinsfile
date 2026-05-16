@@ -52,9 +52,9 @@ pipeline {
         }
 
         stage('Deploy') {
-            when {
-                expression { "${TOGGLE}" == "true" }
-                }
+            // when {
+            //     expression { "${TOGGLE}" == "true" }
+            //     }
             // input {
             //     message "Should we continue?"
             //     ok "Yes, we should."
