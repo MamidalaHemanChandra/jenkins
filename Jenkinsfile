@@ -10,7 +10,7 @@ pipeline {
     }
 
     options {
-        timeout(time: 10, unit: 'SECONDS') 
+        timeout(time: 10, unit: 'MINUTES') 
     }
 
     stages {
@@ -21,7 +21,7 @@ pipeline {
                     sh """
                     echo "Building"
                     echo ${Course}
-                    sleep 10
+                    // sleep 10
                     env
                     """
                 } 
