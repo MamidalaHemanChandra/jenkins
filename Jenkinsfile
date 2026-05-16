@@ -52,7 +52,6 @@ pipeline {
         }
 
         stage('Deploy') {
-            
             // when {
             //     expression { "${TOGGLE}" == "true" }
             //     }
