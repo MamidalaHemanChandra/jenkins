@@ -5,6 +5,10 @@ pipeline {
         }
     }
 
+    environment { 
+        Course = 'Jenkins'
+    }
+
     stages {
 
         stage('Build') {
@@ -12,6 +16,7 @@ pipeline {
                 script {
                     sh """
                     echo "Building"
+                    echo ${Course}
                     """
                 } 
             }
